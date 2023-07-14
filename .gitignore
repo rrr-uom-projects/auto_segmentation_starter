@@ -160,5 +160,5 @@ cython_debug/
 #.idea/
 
 
-test_out/
+logs/
 autoseg_env/
