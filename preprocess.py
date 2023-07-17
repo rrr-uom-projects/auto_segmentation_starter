@@ -8,6 +8,10 @@ from os.path import join
 
 from utils import getFiles
 
+
+#### --> Prior to this you'll need to combine the individual structures into a single mask
+
+
 image_dir = ""
 mask_dir = ""
 output_dir = ""
