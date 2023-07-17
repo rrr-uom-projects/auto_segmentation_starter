@@ -54,7 +54,7 @@ class SegDataset3D(data.Dataset):
         
         # Post-augmentations, add channels axis and normalise
         # After augmentations, perform window and level contrast normalisation (add the channels axis here)
-        image = windowLevelNormalize(image[..., np.newaxis], level=1512, window=3024)
+        image = windowLevelNormalize(image[..., np.newaxis], level=1512, window=3024) # -> !!!! for CT !!!! (not sure what you're using)
         
         # convert to one-hot mask if required (e.g. for DICE loss)
         if self.one_hot_masks:
